@@ -3,48 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Website responsivo para empresa de construção e remodelação."
     />
+
     <title>NovaObra | Construção e Remodelação</title>
+
     <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
     <script src="js/script.js" defer></script>
   </head>
+
   <body>
     <header>
       <a href="#hero" class="logo">NovaObra</a>
+
       <nav aria-label="Menu principal">
         <ul>
           <li>
             <a href="#hero">Início</a>
           </li>
+
           <li>
             <a href="#servicos">Serviços</a>
           </li>
+
           <li>
             <a href="#como-funciona">Como Funciona</a>
           </li>
+
           <li>
             <a href="#projetos">Projetos</a>
           </li>
         </ul>
       </nav>
+
       <a href="#orcamento">Pedir orçamento</a>
     </header>
+
     <main>
+      <!-- HERO -->
+
       <section id="hero">
-        <h1>A sua obra começa com um orçamento claro.</h1>
+        <div class="hero-conteudo">
+          <p class="hero-etiqueta">Construção e Remodelação</p>
 
-        <p>
-          Construção, remodelações e reparações para casas e espaços comerciais.
-          Conte-nos o que precisa e receba uma análise do seu projeto.
-        </p>
+          <h1>A sua obra começa com um orçamento claro.</h1>
 
-        <a href="#orcamento">Pedir orçamento</a>
+          <p>
+            Construção, remodelações e reparações para casas e espaços
+            comerciais. Conte-nos o que precisa e receba uma análise do seu
+            projeto.
+          </p>
 
-        <a href="#">Falar pelo WhatsApp</a>
+          <div class="hero-acoes">
+            <a href="#orcamento" class="cta-primary">Pedir orçamento</a>
+
+            <a href="#" class="whatsapp-link">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              Falar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-imagem">
+          <img
+            src="images/hero-construcao.jpg"
+            alt="Projeto de construção e remodelação"
+          />
+        </div>
       </section>
+
+      <!-- SERVIÇOS -->
 
       <section id="servicos">
         <h2>Serviços</h2>
@@ -54,45 +91,69 @@
           residenciais e comerciais.
         </p>
 
-        <article>
-          <h3>Remodelações</h3>
-          <p>
-            Remodelações completas ou parciais de casas, apartamentos e espaços
-            comerciais.
-          </p>
-        </article>
+        <div class="grade-servicos">
+          <article>
+            <i class="fa-solid fa-hammer" aria-hidden="true"></i>
 
-        <article>
-          <h3>Construção</h3>
-          <p>Execução de novos projetos, ampliações e trabalhos estruturais.</p>
-        </article>
+            <h3>Remodelações</h3>
 
-        <article>
-          <h3>Pintura</h3>
-          <p>
-            Pintura interior e exterior, preparação de superfícies e
-            acabamentos.
-          </p>
-        </article>
+            <p>
+              Remodelações completas ou parciais de casas, apartamentos e
+              espaços comerciais.
+            </p>
+          </article>
 
-        <article>
-          <h3>Eletricidade</h3>
-          <p>Instalações, alterações e melhorias em sistemas elétricos.</p>
-        </article>
+          <article>
+            <i class="fa-solid fa-building" aria-hidden="true"></i>
 
-        <article>
-          <h3>Canalização</h3>
-          <p>Instalações e substituição de redes de água e equipamentos.</p>
-        </article>
+            <h3>Construção</h3>
 
-        <article>
-          <h3>Reparações</h3>
-          <p>
-            Diagnóstico e resolução de pequenas avarias e trabalhos de
-            manutenção.
-          </p>
-        </article>
+            <p>
+              Execução de novos projetos, ampliações e trabalhos estruturais.
+            </p>
+          </article>
+
+          <article>
+            <i class="fa-solid fa-paint-roller" aria-hidden="true"></i>
+
+            <h3>Pintura</h3>
+
+            <p>
+              Pintura interior e exterior, preparação de superfícies e
+              acabamentos.
+            </p>
+          </article>
+
+          <article>
+            <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+
+            <h3>Eletricidade</h3>
+
+            <p>Instalações, alterações e melhorias em sistemas elétricos.</p>
+          </article>
+
+          <article>
+            <i class="fa-solid fa-faucet-drip" aria-hidden="true"></i>
+
+            <h3>Canalização</h3>
+
+            <p>Instalações e substituição de redes de água e equipamentos.</p>
+          </article>
+
+          <article>
+            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+
+            <h3>Reparações</h3>
+
+            <p>
+              Diagnóstico e resolução de pequenas avarias e trabalhos de
+              manutenção.
+            </p>
+          </article>
+        </div>
       </section>
+
+      <!-- COMO FUNCIONA -->
 
       <section id="como-funciona">
         <h2>Como funciona</h2>
@@ -101,9 +162,11 @@
           Um processo simples para entendermos o seu projeto e apresentar a
           melhor solução.
         </p>
+
         <ol>
           <li>
             <h3>Envie o pedido</h3>
+
             <p>
               Indique o tipo de serviço, localização e uma breve descrição do
               trabalho.
@@ -112,6 +175,7 @@
 
           <li>
             <h3>Envie informações</h3>
+
             <p>
               Envie fotografias, medidas ou outras informações que ajudem na
               avaliação.
@@ -120,6 +184,7 @@
 
           <li>
             <h3>Fazemos a avaliação</h3>
+
             <p>
               Verificamos se é possível analisar à distância ou se será
               necessária uma visita.
@@ -128,10 +193,13 @@
 
           <li>
             <h3>Receba o orçamento</h3>
+
             <p>Após a análise, apresentamos a proposta e os próximos passos.</p>
           </li>
         </ol>
       </section>
+
+      <!-- PROJETOS -->
 
       <section id="projetos">
         <h2>Projetos</h2>
@@ -141,30 +209,58 @@
           construção e remodelação.
         </p>
 
-        <article>
-          <h3>Remodelação de apartamento</h3>
-          <p>
-            Renovação de cozinha, casa de banho, pintura e acabamentos
-            interiores.
-          </p>
-        </article>
+        <div class="grade-projetos">
+          <article>
+            <img
+              src="images/projeto-casa-banho.jpg"
+              alt="Exemplo de remodelação de casa de banho"
+            />
 
-        <article>
-          <h3>Remodelação de casa de banho</h3>
-          <p>
-            Substituição de revestimentos, equipamentos e adaptação de
-            canalização.
-          </p>
-        </article>
+            <div class="projeto-conteudo">
+              <h3>Remodelação de casa de banho</h3>
 
-        <article>
-          <h3>Renovação interior</h3>
-          <p>
-            Preparação de paredes, pintura e pequenos trabalhos de melhoria do
-            espaço.
-          </p>
-        </article>
+              <p>
+                Renovação de revestimentos, equipamentos, iluminação e
+                canalização.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="images/projeto-sala.jpg"
+              alt="Exemplo de renovação de sala"
+            />
+
+            <div class="projeto-conteudo">
+              <h3>Renovação de sala</h3>
+
+              <p>
+                Renovação de paredes, pintura, acabamentos e melhoria do espaço
+                interior.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <img
+              src="images/projeto-quarto.jpg"
+              alt="Exemplo de remodelação de quarto"
+            />
+
+            <div class="projeto-conteudo">
+              <h3>Remodelação de quarto</h3>
+
+              <p>
+                Melhoria de paredes, pintura, iluminação e acabamentos
+                interiores.
+              </p>
+            </div>
+          </article>
+        </div>
       </section>
+
+      <!-- ORÇAMENTO -->
 
       <section id="orcamento">
         <h2>Pedir orçamento</h2>
@@ -188,8 +284,8 @@
           <input type="text" id="localidade" name="localidade" required />
 
           <label for="servico">Tipo de serviço</label>
+
           <select id="servico" name="servico" required>
-            <p id="mensagem-servico" hidden></p>
             <option value="">Selecione uma opção</option>
             <option value="remodelacao">Remodelação</option>
             <option value="construcao">Construção</option>
@@ -200,7 +296,10 @@
             <option value="outro">Outro</option>
           </select>
 
+          <p id="mensagem-servico" hidden></p>
+
           <label for="descricao">Descrição do serviço</label>
+
           <textarea
             id="descricao"
             name="descricao"
@@ -212,6 +311,9 @@
         </form>
       </section>
     </main>
+
+    <!-- FOOTER -->
+
     <footer>
       <p>NovaObra — Construção e Remodelação</p>
       <p>&copy; 2026 NovaObra. Todos os direitos reservados.</p>
