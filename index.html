@@ -66,7 +66,7 @@
           <div class="hero-acoes">
             <a href="#orcamento" class="cta-primary">Pedir orçamento</a>
 
-            <a href="#" class="whatsapp-link">
+            <a href="#orcamento" class="whatsapp-link">
               <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
               Falar pelo WhatsApp
             </a>
@@ -213,6 +213,7 @@
           <article>
             <img
               src="images/projeto-casa-banho.jpg"
+              loading="lazy"
               alt="Exemplo de remodelação de casa de banho"
             />
 
@@ -229,6 +230,7 @@
           <article>
             <img
               src="images/projeto-sala.jpg"
+              loading="lazy"
               alt="Exemplo de renovação de sala"
             />
 
@@ -245,6 +247,7 @@
           <article>
             <img
               src="images/projeto-quarto.jpg"
+              loading="lazy"
               alt="Exemplo de remodelação de quarto"
             />
 
@@ -296,7 +299,7 @@
             <option value="outro">Outro</option>
           </select>
 
-          <p id="mensagem-servico" hidden></p>
+          <p id="mensagem-servico" aria-live="polite" hidden></p>
 
           <label for="descricao">Descrição do serviço</label>
 
@@ -308,6 +311,7 @@
           ></textarea>
 
           <button type="submit">Enviar pedido</button>
+          <p id="mensagem-envio" aria-live="polite" hidden></p>
         </form>
       </section>
     </main>

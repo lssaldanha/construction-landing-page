@@ -10,7 +10,6 @@ body {
   margin: 0;
 
   font-family:
-    Inter,
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -554,6 +553,31 @@ body > header > a:last-child {
 #orcamento button:hover,
 #orcamento button:focus {
   background-color: #d97706;
+}
+
+#mensagem-servico,
+#mensagem-envio {
+  margin: 0;
+
+  padding: 12px 14px;
+
+  font-size: 0.95rem;
+
+  border-radius: 6px;
+}
+
+#mensagem-servico {
+  color: #92400e;
+  background-color: #fff7ed;
+
+  border: 1px solid #fed7aa;
+}
+
+#mensagem-envio {
+  color: #166534;
+  background-color: #f0fdf4;
+
+  border: 1px solid #bbf7d0;
 }
 
 /* FOOTER */
